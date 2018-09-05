@@ -15,7 +15,7 @@ Rekurze:
     písmen anglické abecedy v tomto řetězci.
 *2.1 Upravte program tak, aby vracel četnost všech znaků, na které v řetězci narazí
 
-2.2 Napište program, který v zadaném řetězci nahradí všechna mezery znakem '+' nebo '_',
+2.2 Napište program, který v zadaném řetězci nahradí všechny mezery znakem '+' nebo '_',
     můžete si vybrat.
 
 2.3 Napište program, který v zadaném řetězci zkontroluje spárování závorek, kontrolujte pouze
