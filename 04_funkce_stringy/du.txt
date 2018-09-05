@@ -3,7 +3,7 @@
 
 Rekurze:
 **1.1 Napište program, který vykreslí kochovu křivku (použijte želví grafiku)
-**1.2 Napište program, který vyřeší problém Hanojsk ých věží, na vstupu bude počet
+**1.2 Napište program, který vyřeší problém Hanojských věží, na vstupu bude počet
       disků umístněných na prvním sloupku zleva, cílem je přemístnit je všechny na
       sloupek úplně vpravo.
 
