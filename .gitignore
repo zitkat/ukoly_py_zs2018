@@ -1,0 +1,10 @@
+#JetBrains
+.idea/
+
+#Jupyter
+.ipynb_checkpoints/
+
+# Python
+*.pyc
+__pycache__/
+venv/
