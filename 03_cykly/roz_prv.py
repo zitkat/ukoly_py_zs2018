@@ -1,3 +1,5 @@
+# spocte rozklad na prvocisla
+
 c = int(input("Zadejte číslo> "))
 print(c, '= ', end="")
 prvocislo = 2

@@ -5,8 +5,8 @@ body = 0
 while body <= 21:
     print("Máte {0} bodů, to je dobré".format(body))
     pokracovat = input("Prejete si pokracovat [ano]/ne? ")
-    if pokracovat != "ne":
-        body += randint(2, 10)
+    if pokracovat != "ne":  # dealer je neuprosny a kdyz chces prestat musis to rict!
+        body += randint(2, 10)  # jinak hrajes dal
     else:
         break
 
