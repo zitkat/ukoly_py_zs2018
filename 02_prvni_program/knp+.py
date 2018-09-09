@@ -1,5 +1,7 @@
 from random import randint
 
+# Tohle je verze s pokrocilimi konstrukcemi, podivej se na ni az ke konci kurzu.
+
 moznosti = ["kámen", "nůžky", "papír"]
 tah_pocitace = moznosti[randint(0, 2)]
 tah_cloveka = input("kámen, nůžky nebo papír? ")
