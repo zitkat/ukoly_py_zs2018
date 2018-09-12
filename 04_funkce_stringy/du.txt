@@ -11,9 +11,9 @@ Rekurze:
 
 2. Řetězce:
 -----------
-2.1 Napište program, který dostane na vstup libovolný řetězec a na výstupu vrátí četnost
+*2.1 Napište program, který dostane na vstup libovolný řetězec a na výstupu vrátí četnost
     písmen anglické abecedy v tomto řetězci.
-*2.1 Upravte program tak, aby vracel četnost všech znaků, na které v řetězci narazí
+**2.1 Upravte program tak, aby vracel četnost všech znaků, na které v řetězci narazí
 
 2.2 Napište program, který v zadaném řetězci nahradí všechny mezery znakem '+' nebo '_',
     můžete si vybrat.
