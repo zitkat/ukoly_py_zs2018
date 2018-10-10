@@ -1,3 +1,0 @@
-From rossetacode:
-R1: http://rosettacode.org/wiki/Pathological_floating_point_problems
-    Hezký příklad problémů konečné aritmetiky.

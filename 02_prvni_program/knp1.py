@@ -11,6 +11,7 @@ elif cislo == 2:
 
 tah_cloveka = input("kámen, nůžky nebo papír? ")
 
+import ipdb; ipdb.set_trace()
 
 print(tah_pocitace)
 if tah_cloveka == tah_pocitace:
