@@ -1,30 +1,30 @@
 from math import sqrt
-import turtle as t
+from turtle import forward, left, right, done, pendown, penup
 
 strana = 20
 populace = 5
 for i in range(populace):
     # nakreslime domecek
-    t.forward(strana)
-    t.left(90)
-    t.forward(strana)
-    t.left(90)
-    t.forward(strana)
-    t.left(90)
-    t.forward(strana)
-    t.left(90)
-    t.left(45)
-    t.forward(sqrt(2) * strana)
-    t.left(90)
-    t.forward(sqrt(2) * strana / 2)
-    t.left(90)
-    t.forward(sqrt(2) * strana / 2)
-    t.left(90)
-    t.forward(sqrt(2) * strana)
+    forward(strana)
+    left(90)
+    forward(strana)
+    left(90)
+    forward(strana)
+    left(90)
+    forward(strana)
+    left(90)
+    left(45)
+    forward(sqrt(2) * strana)
+    left(90)
+    forward(sqrt(2) * strana / 2)
+    left(90)
+    forward(sqrt(2) * strana / 2)
+    left(90)
+    forward(sqrt(2) * strana)
 
     # a posuneme se k sousedovi
-    t.left(45)  # nejdriv se musime srovnat, aby byla ulice rovne
-    t.forward(10)
+    left(45)  # nejdriv se musime srovnat, aby byla ulice rovne
+    forward(10)
 
 
-t.done()
+done()
