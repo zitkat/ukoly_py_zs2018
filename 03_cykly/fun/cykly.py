@@ -35,18 +35,22 @@ def is_prime(N):
 #                                             map(lambda x: N % x != 0,
 #                                                 cons(2, range(3, int(ceil(sqrt(N))+1), 2)))))
 #       (int(input("Zadejte N: "))))
-#
-# print(list(map(lambda N:
-#                next(iterate(
-#                    lambda x: list(cons(first(x) + second(x), x)),
-#                    [1, 1])),
-#                range(int(input("Zadejte N: "))))))
 
 
 def fibf(N):
-   f = iterate(
+    f = iterate(
         lambda x: list(cons(first(x) + second(x), x)),
         [1, 1])
-   return [next(f) for i in range(N)][-1][::-1]
+    return list(map(lambda x: next(f), range(N)))[-1][::-1]
 
-print(fibf(5))
+    # return [next(f) for i in range(N)][-1][::-1]
+# print(fibf(5))
+
+
+fibff = partial((lambda f, N: list(map(lambda _: next(f), range(N-1)))[-1][::-1]),
+                iterate(lambda x: list(cons(first(x) + second(x), x)), [1, 1]))
+
+print(fibff(22))
+
+# list(map(print, iterate(lambda x: list(cons(first(x) + second(x), x)), [1, 1])))
+
