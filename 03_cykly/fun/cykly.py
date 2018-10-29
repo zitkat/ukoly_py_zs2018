@@ -1,4 +1,4 @@
-from toolz import map, partial, cons, reduce, accumulate, sliding_window, iterate, first, second
+from toolz import *
 from operator import mul, and_, add
 from math import sqrt, ceil
 
@@ -50,7 +50,17 @@ def fibf(N):
 fibff = partial((lambda f, N: list(map(lambda _: next(f), range(N-1)))[-1][::-1]),
                 iterate(lambda x: list(cons(first(x) + second(x), x)), [1, 1]))
 
-print(fibff(22))
+fibfp = partial(flip(nth, iterate(lambda x: list(cons(first(x) + second(x), x)), [1, 1])))
 
+fibfn = lambda N: list(reversed(nth(N, iterate(lambda l: list(cons(first(l) + second(l), l)), [1, 1]))))
+
+# print(fibfp(5))
 # list(map(print, iterate(lambda x: list(cons(first(x) + second(x), x)), [1, 1])))
+
+zvirata = ["pes", "kocka", "králík", "had"]
+len5 = (lambda l: list((filter(lambda z: len(z) < 5, l))))
+startk = (lambda l: list((filter(lambda z: z[0] == 'k', l))))(zvirata)
+isnz = lambda s: s in zvirata
+
+print(isnz("ptakopysk"))
 
