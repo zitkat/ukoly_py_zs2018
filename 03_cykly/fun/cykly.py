@@ -64,3 +64,9 @@ isnz = lambda s: s in zvirata
 
 print(isnz("ptakopysk"))
 
+# quine, is there easier way?
+print("{0}.format(r\'{0}\'))".format(r'print("{0}.format(r\'{0}\'))"'))
+
+seznam = nth(18, iterate(lambda l: list(range(5)) + [l], [5]))
+print(seznam[5][5][5][5][5][5][5][5][5][5][5][5][5][5][5][5][5][5][0] == 5)
+
