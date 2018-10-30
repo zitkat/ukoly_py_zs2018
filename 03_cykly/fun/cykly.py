@@ -25,42 +25,42 @@ from math import sqrt, ceil
 
 
 def is_prime(N):
+    if N == 2:
+        return True
+    elif N == 1:
+        return False
     return reduce(and_, map(lambda x: N % x != 0,
-                                  cons(2, range(3, int(ceil(sqrt(N))+1), 2))))
+                            cons(2, range(3, int(ceil(sqrt(N))+1), 2))))
 
 
 # print(is_prime(int(input("Zadejte N: "))))
 
-# print((lambda N: True if N == 2 else reduce(and_,
-#                                             map(lambda x: N % x != 0,
-#                                                 cons(2, range(3, int(ceil(sqrt(N))+1), 2)))))
-#       (int(input("Zadejte N: "))))
+ispf = (lambda N: N == 2 if N == 2 or N == 1 else reduce(and_,
+                                                         map(lambda x: N % x != 0,
+                                                             cons(2, range(3, int(ceil(sqrt(N))+1), 2)))))
 
 
-def fibf(N):
+def fib(N):
     f = iterate(
         lambda x: list(cons(first(x) + second(x), x)),
         [1, 1])
     return list(map(lambda x: next(f), range(N)))[-1][::-1]
 
-    # return [next(f) for i in range(N)][-1][::-1]
-# print(fibf(5))
 
-
-fibff = partial((lambda f, N: list(map(lambda _: next(f), range(N-1)))[-1][::-1]),
-                iterate(lambda x: list(cons(first(x) + second(x), x)), [1, 1]))
+fibf = partial(lambda f, N: list(map(lambda _: next(f), range(N-1)))[-1][::-1],
+               iterate(lambda x: list(cons(first(x) + second(x), x)), [1, 1]))
 
 fibfp = partial(flip(nth, iterate(lambda x: list(cons(first(x) + second(x), x)), [1, 1])))
 
-fibfn = lambda N: list(reversed(nth(N, iterate(lambda l: list(cons(first(l) + second(l), l)), [1, 1]))))
+fibfn = (lambda N: list(reversed(nth(N, iterate(lambda l: list(cons(first(l) + second(l), l)), [1, 1])))))
 
-# print(fibfp(5))
+# infinite loop
 # list(map(print, iterate(lambda x: list(cons(first(x) + second(x), x)), [1, 1])))
 
 zvirata = ["pes", "kocka", "králík", "had"]
 len5 = (lambda l: list((filter(lambda z: len(z) < 5, l))))
-startk = (lambda l: list((filter(lambda z: z[0] == 'k', l))))(zvirata)
-isnz = lambda s: s in zvirata
+startk = (lambda l: list((filter(lambda z: z[0] == 'k', l))))
+isnz = (lambda s: s in zvirata)
 
-print(isnz("ptakopysk"))
+# print(isnz("ptakopysk"))
 
