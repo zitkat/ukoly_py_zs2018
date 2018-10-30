@@ -1,3 +1,0 @@
-Ice breaker
-
-1. Napište program, libovolný, nemusí nic dělat, ani jít spustit a pošlete ho nějakému koučovi.
