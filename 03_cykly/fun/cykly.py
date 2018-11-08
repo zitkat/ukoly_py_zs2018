@@ -3,25 +3,25 @@ from operator import mul, and_, add
 from math import sqrt, ceil
 
 #
-# print("".join(map(lambda x: "a\n", range(5))))
-#
-# print("".join(map(lambda x: "Radek {0}\n".format(x), range(5))))
-#
-# print("".join(map(lambda x: "{0} na druhou je {1}\n".format(x, x**2), range(5))))
-#
-# print("".join(map(lambda y: "".join(map(lambda x: "x", range(5))) + "\n", range(5))))
-#
-# print("".join(map(lambda y: "".join(map(lambda x: " {0}".format(y*x), range(5))) + "\n", range(5))))
-#
-# print(list(map(lambda y: list(map(lambda x: " {0}".format(y*x), range(5))), range(5))))
-#
-# print(list(map(list, map(lambda y: map(lambda x: " {0}".format(y*x), range(5)), range(5)))))
-#
-# print("\n".join(map("".join, map(lambda y: map(lambda x: " {0}".format(y*x), range(5)), range(5)))))
-#
-# print("".join(map(lambda y: "".join(map(lambda x: "x", range(y))) + "\n", range(1, 5))))
-#
-# print(reduce(mul, range(1, int(input("Zadejte cislo: "))+1)))
+print("".join(map(lambda x: "a\n", range(5))))
+
+print("".join(map(lambda x: "Radek {0}\n".format(x), range(5))))
+
+print("".join(map(lambda x: "{0} na druhou je {1}\n".format(x, x**2), range(5))))
+
+print("".join(map(lambda y: "".join(map(lambda x: "x", range(5))) + "\n", range(5))))
+
+print("".join(map(lambda y: "".join(map(lambda x: " {0}".format(y*x), range(5))) + "\n", range(5))))
+
+print(list(map(lambda y: list(map(lambda x: " {0}".format(y*x), range(5))), range(5))))
+
+print(list(map(list, map(lambda y: map(lambda x: " {0}".format(y*x), range(5)), range(5)))))
+
+print("\n".join(map("".join, map(lambda y: map(lambda x: " {0}".format(y*x), range(5)), range(5)))))
+
+print("".join(map(lambda y: "".join(map(lambda x: "x", range(y))) + "\n", range(1, 5))))
+
+print(reduce(mul, range(1, int(input("Zadejte cislo: "))+1)))
 
 
 def is_prime(N):
@@ -35,7 +35,7 @@ def is_prime(N):
 
 # print(is_prime(int(input("Zadejte N: "))))
 
-ispf = (lambda N: N == 2 if N == 2 or N == 1 else reduce(and_,
+ispf = (lambda N: N == 2 if (N == 2) or (N == 1) else reduce(and_,
                                                          map(lambda x: N % x != 0,
                                                              cons(2, range(3, int(ceil(sqrt(N))+1), 2)))))
 
