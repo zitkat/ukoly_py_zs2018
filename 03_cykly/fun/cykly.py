@@ -2,26 +2,25 @@ from toolz import *
 from operator import mul, and_, add
 from math import sqrt, ceil
 
+# print("".join(map(lambda x: "a\n", range(5))))
 #
-print("".join(map(lambda x: "a\n", range(5))))
-
-print("".join(map(lambda x: "Radek {0}\n".format(x), range(5))))
-
-print("".join(map(lambda x: "{0} na druhou je {1}\n".format(x, x**2), range(5))))
-
-print("".join(map(lambda y: "".join(map(lambda x: "x", range(5))) + "\n", range(5))))
-
-print("".join(map(lambda y: "".join(map(lambda x: " {0}".format(y*x), range(5))) + "\n", range(5))))
-
-print(list(map(lambda y: list(map(lambda x: " {0}".format(y*x), range(5))), range(5))))
-
-print(list(map(list, map(lambda y: map(lambda x: " {0}".format(y*x), range(5)), range(5)))))
-
-print("\n".join(map("".join, map(lambda y: map(lambda x: " {0}".format(y*x), range(5)), range(5)))))
-
-print("".join(map(lambda y: "".join(map(lambda x: "x", range(y))) + "\n", range(1, 5))))
-
-print(reduce(mul, range(1, int(input("Zadejte cislo: "))+1)))
+# print("".join(map(lambda x: "Radek {0}\n".format(x), range(5))))
+#
+# print("".join(map(lambda x: "{0} na druhou je {1}\n".format(x, x**2), range(5))))
+#
+# print("".join(map(lambda y: "".join(map(lambda x: "x", range(5))) + "\n", range(5))))
+#
+# print("".join(map(lambda y: "".join(map(lambda x: " {0}".format(y*x), range(5))) + "\n", range(5))))
+#
+# print(list(map(lambda y: list(map(lambda x: " {0}".format(y*x), range(5))), range(5))))
+#
+# print(list(map(list, map(lambda y: map(lambda x: " {0}".format(y*x), range(5)), range(5)))))
+#
+# print("\n".join(map("".join, map(lambda y: map(lambda x: " {0}".format(y*x), range(5)), range(5)))))
+#
+# print("".join(map(lambda y: "".join(map(lambda x: "x", range(y))) + "\n", range(1, 5))))
+#
+# print(reduce(mul, range(1, int(input("Zadejte cislo: "))+1)))
 
 
 def is_prime(N):
@@ -47,6 +46,13 @@ def fib(N):
     return list(map(lambda x: next(f), range(N)))[-1][::-1]
 
 
+def fibt(N, N_1=1, N_2=1):
+    if N == 0:
+        return N_1
+    else:
+        return fibt(N - 1, N_2, N_1 + N_2)
+
+
 fibf = partial(lambda f, N: list(map(lambda _: next(f), range(N-1)))[-1][::-1],
                iterate(lambda x: list(cons(first(x) + second(x), x)), [1, 1]))
 
@@ -65,8 +71,10 @@ isnz = (lambda s: s in zvirata)
 # print(isnz("ptakopysk"))
 
 # quine, is there easier way?
-print("{0}.format(r\'{0}\'))".format(r'print("{0}.format(r\'{0}\'))"'))
+# print("{0}.format(r\'{0}\'))".format(r'print("{0}.format(r\'{0}\'))"'))
 
 seznam = nth(18, iterate(lambda l: list(range(5)) + [l], [5]))
-print(seznam[5][5][5][5][5][5][5][5][5][5][5][5][5][5][5][5][5][5][0] == 5)
+seznam = [5, 0, 0, 0, 0]
+seznam.append(seznam)
+# print(seznam[5][5][5][5][5][5][5][5][5][5][5][5][5][5][5][5][5][5][0] == 5)
 
