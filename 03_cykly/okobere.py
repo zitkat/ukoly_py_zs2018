@@ -1,7 +1,6 @@
 from random import randint
 body = 0
 
-
 while body <= 21:
     print("Máte {0} bodů, to je dobré".format(body))
     pokracovat = input("Prejete si pokracovat [ano]/ne? ")
