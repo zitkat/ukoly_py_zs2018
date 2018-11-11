@@ -19,9 +19,9 @@ def hit_sphere(sph, x0, y0):
     y = y0 - sph.cy
     zsq = sph.r ** 2 - (x ** 2 + y ** 2)
     if zsq < 0:
-        return (False, 0, 0)
+        return False, 0, 0
     szsq = math.sqrt(zsq)
-    return (True, sph.cz - szsq, sph.cz + szsq)
+    return True, sph.cz - szsq, sph.cz + szsq
 
 
 def draw_sphere(k, ambient, light):

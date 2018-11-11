@@ -35,7 +35,7 @@ def is_prime(N):
 
 # print(is_prime(int(input("Zadejte N: "))))
 
-ispf = (lambda N: N == 2 if N == 2 or N == 1 else reduce(and_,
+ispf = (lambda N: N == 2 if (N == 2) or (N == 1) else reduce(and_,
                                                          map(lambda x: N % x != 0,
                                                              cons(2, range(3, int(ceil(sqrt(N))+1), 2)))))
 
@@ -45,6 +45,13 @@ def fib(N):
         lambda x: list(cons(first(x) + second(x), x)),
         [1, 1])
     return list(map(lambda x: next(f), range(N)))[-1][::-1]
+
+
+def fibt(N, N_1=1, N_2=1):
+    if N == 0:
+        return N_1
+    else:
+        return fibt(N - 1, N_2, N_1 + N_2)
 
 
 fibf = partial(lambda f, N: list(map(lambda _: next(f), range(N-1)))[-1][::-1],
@@ -65,7 +72,7 @@ isnz = (lambda s: s in zvirata)
 # print(isnz("ptakopysk"))
 
 # quine, is there easier way?
-print("{0}.format(r\'{0}\'))".format(r'print("{0}.format(r\'{0}\'))"'))
+# print("{0}.format(r\'{0}\'))".format(r'print("{0}.format(r\'{0}\'))"'))
 
 seznam = nth(18, iterate(lambda l: list(range(5)) + [l], [5]))
 seznam = [5, 3, 3, 3, 3]
@@ -87,5 +94,3 @@ def place(pole, coors ,mark="X"):
 
 
 pol_print(place(pole, [(0, 0), (0, 1), (5, 5)]))
-
-

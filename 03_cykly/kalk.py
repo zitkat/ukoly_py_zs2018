@@ -11,7 +11,7 @@ elif op == "/":
 else:
     vys = "nevim"
 
-print("a", op, "b je", vys)
+# print("a", op, "b je", vys)
 
 
 
@@ -23,6 +23,9 @@ print("a", op, "b je", vys)
 ops = {"+": lambda x, y: x + y,
        "-": lambda x, y: x - y,
        "*": lambda x, y: x * y,
-       "/": lambda x, y: x / y}
+       "/": lambda x, y: x / y,
+       "%": lambda x, y: x % y,
+       "^": lambda x, y: x**y}
 
 print("a", op, "b je", ops[op](a, b) if op in ops else "Nevim")
+print("{} {} {} je {}".format(a, op, b, ops[op](a, b) if op in ops else "Nevim"))
