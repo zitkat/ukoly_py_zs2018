@@ -1,3 +1,7 @@
+"""
+Hraje hru oko bere
+"""
+
 from random import randint
 body = 0
 

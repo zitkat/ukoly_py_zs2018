@@ -1,4 +1,6 @@
-# spocte rozklad na prvocisla
+"""
+Spočte rozklad na prvočísla
+"""
 
 c = int(input("Zadejte číslo> "))
 print(c, '= ', end="")

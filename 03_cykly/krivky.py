@@ -1,3 +1,9 @@
+"""
+Nakreslí kochovu křivku
+a část serpinského trojúlehníka
+"""
+
+
 import turtle as t
 
 
