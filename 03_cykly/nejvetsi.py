@@ -1,3 +1,7 @@
+"""
+Učite největší číslo z pěti zadaných
+"""
+
 n = 5
 
 nej = float(input("Zadejte cislo> "))  # nacteme si prvni cislo, abychom meli s cim porovnavat

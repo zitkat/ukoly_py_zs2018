@@ -1,3 +1,8 @@
+"""
+Určite nejmenší číslo z n zadaných,
+volá pdb.set_trace() - ukázka debugování
+"""
+
 import pdb
 
 pdb.set_trace()

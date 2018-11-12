@@ -1,3 +1,8 @@
+"""
+Urči zda je n dokonalé
+"""
+
+
 n = int(input("Zadejte n> "))
 
 for i in range(1, n+1):  # postupne vyzkousime vsechna cisla mensi nez n
