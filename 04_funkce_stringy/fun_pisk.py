@@ -3,6 +3,7 @@ Hraje piskvorky
 """
 from random import randrange
 
+
 def vyhodnot(hra):
     """
     :param hra:
