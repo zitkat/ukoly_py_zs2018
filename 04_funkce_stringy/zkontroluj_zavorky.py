@@ -1,5 +1,3 @@
-retezec = str(input("Zadejte retezec:"))
-
 
 def zkontroluj_zavorky(retezec):
     """
@@ -24,4 +22,5 @@ def zkontroluj_zavorky(retezec):
 
     return True
 
+retezec = str(input("Zadejte retezec, jehoz zavorky, chete zkontrolovat \n: "))
 print(zkontroluj_zavorky(retezec))
