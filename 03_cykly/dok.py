@@ -1,5 +1,5 @@
 """
-Urči zda je n dokonalé
+Vypise dokonala cisla mensi nez n
 """
 
 
