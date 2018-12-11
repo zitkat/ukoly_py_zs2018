@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 """
 Spočte rozklad na prvočísla
 """
@@ -15,3 +16,4 @@ while c > 1:
         prvocislo += 1
     else:
         prvocislo += 2
+print()

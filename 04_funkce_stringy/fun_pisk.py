@@ -51,9 +51,9 @@ def tah_hrace(hra):
             else:
                 print("Obsazena pozice, hrajte jinam.")
         else:
-            print("Hrajte jen v herním poli, tj. od 1 do {}".format(len(hra)))
-
-
+            print("Hrajte jen v herním poli tj. od 1 do {}".
+                  format(len(hra)))
+            
 def tah_pocitace(hra):
     """
     Náhodně táhne "o" na volné pole
@@ -82,9 +82,9 @@ def piskvorky1d():
     else:
         print("Ted jsem vyhrál já.")
 
-
-
-if __name__ == '__main__': # Následující řádky se provedou, pouze pokud je skript spuštěn přímo
+# Následující řádky se provedou,
+# pouze pokud je skript spuštěn přímo
+if __name__ == '__main__': 
     piskvorky1d()
 
 

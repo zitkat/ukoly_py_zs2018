@@ -4,7 +4,6 @@ def nakresli_dum(strana):
     """
     Tahle nakresli domecek jednim tahem,
     jde to ale spousty jinych zpusobu,
-    
 
     :param strana je vyska steny domku
     """
@@ -46,7 +45,8 @@ def nakresli_dum2(sirka, vyska):
     from math import atan, tan, degrees
     from math import sqrt
     prepona = sqrt(sirka**2 + vyska**2)  # delka diagonaly a strany na střeše
-    vs = float(vyska)/sirka  # protilehlá ku přeponě, float() je potřeba aby se nedělilo celočíselně
+    vs = float(vyska)/sirka  # protilehlá ku přeponě, float()
+    # je potřeba aby se nedělilo celočíselně
     alf = degrees(atan(vs))  # uhel se spočítá pomocí arcustangens
 
     # čtverec
