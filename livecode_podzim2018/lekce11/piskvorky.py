@@ -23,6 +23,7 @@ def tah_hrace(herni_pole):
 
     return nove_herni_pole
 
+
 def tah_pocitace(herni_pole):
 
     while True:
@@ -32,6 +33,7 @@ def tah_pocitace(herni_pole):
             break
 
     return nove_herni_pole
+
 
 def vyhodnot(herni_pole):
     if "ooo" in herni_pole:

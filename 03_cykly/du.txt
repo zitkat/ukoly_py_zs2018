@@ -14,6 +14,7 @@ Cykly:
 
 
 `(3b-22.2)2. Napište program, který rozhodne, jestli je zadané číslo prvočíslo.
+
 3. Napište program, který vypíše všechna prvočísla menší nebo rovná zadanému číslu.
 *4. Napište program, který rozloží zadané číslo na součin prvočísel.
     TIP nemusíte vyhledávat prvočísla.
@@ -32,11 +33,11 @@ From Rossetacode:
 
 R4: http://rosettacode.org/wiki/Babbage_problem
     Charles Babbage slíbil Adě Lovelace postavit první "počítač",
-    kromě toho, že jí chtěl udělat radost ho zajímal i následující problém:
+    kromě toho, že jí chtěl udělat radost, ho zajímal i následující problém:
 
     Jaké je nejmenší přirozené číslo jehož druhá mocnina končí číslicemi
     269 696?
 
     Napište, program, který toto číslo najde. Pozor, napište jej ale tak, aby mu
-    i pan Babbage, který narozdíl od Lady Lovelace nikdy neprogramoval, rozumněl
+    i pan Babbage, který v Pythonu nikdy neprogramoval, rozumněl
     a uvěřil vám, že odpověď, kterou program dá, je správná.
