@@ -31,8 +31,16 @@ def tahni(hra, cislo_policka, symbol):
     :param symbol:
     :return:
     """
-    return hra[0:cislo_policka] + symbol + hra[cislo_policka+1:]
+    return hra[0:cislo_policka] + \
+           symbol + \
+           hra[cislo_policka+1:]
 
+def najdi_vyskyty(retezec, hledany):
+    nalezeno = []
+    for cislo, znak in enumerate(retezec):
+        if hledany == znak:
+            nalezeno.append(cislo)
+    return nalezeno
 
 def tah_hrace(hra):
     """
